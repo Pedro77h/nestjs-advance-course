@@ -37,8 +37,8 @@
     }
   },
   "dependencies": {
+    "@nestjs/mapped-types": "*",
     "eslint-config-next": "^13.2.3",
     "eslint-config-prettier": "^8.7.0"
   }
 }
-´
