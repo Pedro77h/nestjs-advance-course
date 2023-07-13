@@ -25,6 +25,8 @@ export class DBModule {
     };
   }
 
+//todo: use config service to pick the database props
+
   private static getConnectionOptionsPostgres(
     dbData: ConfigDatabase
   ): TypeOrmModuleOptions {
@@ -32,10 +34,8 @@ export class DBModule {
       type: "postgres",
       url: dbData.url,
       keepConnectionAlive: true,
-      ssl:
-        process.env.NODE_ENV !== "local" && process.env.NODE_ENV !== "test"
-          ? { rejectUnauthorized: false }
-          : false,
+      username: "api",
+      password: "development_pass"
     };
   }
 
