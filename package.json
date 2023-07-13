@@ -4,9 +4,9 @@
   "scripts": {
     "build-all":"pnpm run --parallel -r build",
     "nx-build-all":"nx run-many --target=build",
-    "lint": "node node_modules/prettier/bin-prettier --check \"**/*.{js,json,ts,yml,yaml}\"",
+    "lint": "node node_modules/prettier/bin-prettier --check \"**/*.{js,json,ts,}\"",
     "prepare": "husky install",
-    "prettier": "node node_modules/prettier/bin-prettier --check '**/*.{js,json,ts,yml,yaml}'",
+    "prettier": "node node_modules/prettier/bin-prettier --check '**/*.{js,json,ts}'",
     "prettier:write": "node node_modules/prettier/bin-prettier --write \"**/*.{js,json,ts,yml,yaml}\""
   },
   "devDependencies": {
